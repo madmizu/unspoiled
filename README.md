@@ -9,7 +9,9 @@ The aim of our web application is to alleviate the struggle of using groceries <
 ![backend](images/backend_framework.PNG)
 
 ### Framework/Mockup (frontend):
-<em>TBD</em>
+![Homepage](images/home_mock.png);
+![newitems](images/new_items_mock.png);
+![recipes](images/recipes_mock.png)
 
 ## User Stories:
 As a user, I should be able to:
