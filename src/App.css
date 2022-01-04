@@ -1,38 +1,32 @@
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Give You Glory', cursive;
+font-family: 'Nosifer', cursive;
+font-family: 'Saira Stencil One', cursive;
+font-family: 'Slackey', cursive;
+font-family: 'Swanky and Moo Moo', cursive;
+font-family: 'Vast Shadow', cursive;
+font-family: 'Walter Turncoat', cursive; */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: rgb(49, 49, 49);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards {
+  display: inline-flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sections {
+  border-style: solid;
+  font-family: 'Slackey', cursive; 
+  height: auto;
+  padding: 30px;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-text {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

@@ -26,7 +26,6 @@ As a user, I should be able to:
 -	Add items to my Shopping List when I need to restock
 -	See my entire Shopping List
 -	Remove things from my Shopping List
-
 -	See all recipes I can make for each item in my inventory
 -	See all items I need for a recipe (including optional items)
 -	Add new recipes to my collection of recipes
@@ -47,7 +46,7 @@ For this project, you must:
             - Grocery Items (many to many) Recipes (through Recipe Ingredients)
         - Recipes (many to many) Recipe Ingredients
             - Recipes (many to many) Grocery Items (through Recipe Ingredients)
-     ☑ Create API routes in Sinatra that handles at least three different CRUD actions for at least one of your Active Record models.
+    ☑ Create API routes in Sinatra that handles at least three different CRUD actions for at least one of your Active Record models.
         - Create new Grocery Items
         - Create new Transactions
         - Create new Recipes
@@ -56,5 +55,5 @@ For this project, you must:
         - Update Grocery Items (quantity, as used)
         - Update Shopping List (add or remove items)
         - Delete Grocery Items (i.e. as items are used up)
-- Build a separate React frontend application that interacts with the API to perform CRUD actions.
-- Use good OO design patterns. You should have separate classes for each of your models, and create instance - and class methods as necessary.
+    ☑ Build a separate React frontend application that interacts with the API to perform CRUD actions.
+    ☑ Use good OO design patterns. You should have separate classes for each of your models, and create instance - and class methods as necessary.
