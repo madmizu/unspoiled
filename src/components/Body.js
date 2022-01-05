@@ -10,14 +10,24 @@ const [body, setBody] = useState("home");
 const [shoppingList, setShoppingList] = useState("true");
 
     return (
-        <div className = "body">
+        <div className = "container border">
+            <div className="row">
+                
             {body === "home" ?
-                <div className = "cards">
-                    <SectionCard title = "Bought It" changeSection = {()=>setBody("transactions")}/>
-                    <SectionCard title = "Have It" changeSection = {()=>setBody("inventory")}/>
-                    <SectionCard title = "Need It" changeSection = {()=>setBody("shoppingList")}/>
+                <>
+                    <div className="col-sm-3 border">
+                        <SectionCard title = "Bought It" changeSection = {()=>setBody("transactions")}/>
+                    </div>
+                    <div className="col-sm-3 border">
+                        <SectionCard title = "Have It" changeSection = {()=>setBody("inventory")}/>
+                    </div>
+                    <div className="col-sm-3 border">
+                        <SectionCard title = "Need It" changeSection = {()=>setBody("shoppingList")}/>
+                    </div>
+                    <div className="col-sm-3 border">
                     <SectionCard title = "Cook It" changeSection = {()=>setBody("recipes")}/>
-                </div> : <></> }
+                    </div>
+                </> : <></> }
             {body === "transactions" ?
                 <Transactions returnHome = {()=>setBody("home")} /> : null }
             {body === "inventory" ?
@@ -29,6 +39,7 @@ const [shoppingList, setShoppingList] = useState("true");
                     returnHome = {()=>setBody("home")}
                     addToList = {setShoppingList}
                         /> : null }
+            </div>
         </div>
     )
 }

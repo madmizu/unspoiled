@@ -7,26 +7,28 @@ font-family: 'Swanky and Moo Moo', cursive;
 font-family: 'Vast Shadow', cursive;
 font-family: 'Walter Turncoat', cursive; */
 
-.App {
-  text-align: center;
-}
 
 .header {
   background-color: rgb(49, 49, 49);
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  max-width:600px;
 }
 
 .cards {
   display: inline-flex;
 }
 
+
+
 .sections {
-  border-style: solid;
   font-family: 'Slackey', cursive; 
-  height: auto;
-  width: min-content;
-  display: inline-flex;
-  padding: 30px;
-  margin: 20px;
+  /* padding: 30px;
+  margin: 10px; */
 }
 
 .card-text {
@@ -55,4 +57,15 @@ font-family: 'Walter Turncoat', cursive; */
 .addToList {
   font-size: 10px;
   vertical-align: text-bottom;
+}
+
+.newFoodItem {
+  display: block;
+  border-style: solid;
+}
+
+[class*="col"] {
+  padding: 1rem;
+  background-color: red;
+  border: 4px solid #fff;
 }
