@@ -1,30 +1,32 @@
 import SectionCard from './SectionCard';
 import GroceryItem from './GroceryItem';
 
-function Inventory ({returnHome}) {
+function Inventory ({returnHome, itemsToRender, body, handleItemDelete}) {
 
+    console.log(itemsToRender)
     return (
         <div className = "inventory">
-             <SectionCard title = "Return Home" changeSection = {returnHome} />
+            <div className="col-sm-12 border">
+                <SectionCard title = {body === "inventory" ? "Have It - Inventory" : "Need It - Shopping List"}/>
+            </div>
+            <div className="col-sm-12 border">
+                <SectionCard title = "Return Home" changeSection = {returnHome} />
+            </div>
                 <br />
             <table className="table" id="inventoryTable">
                 <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col">Spoil Date</th>
-                        <th scope="col">Category</th>
+                        {body === "inventory" ? <th scope="col">Spoil Date</th> : null}
                         <th scope="col">Item Name</th>
                         <th scope="col">Quantity</th> 
                         <th scope="col">Recipes</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <GroceryItem />
-                    <GroceryItem />
-                    <GroceryItem />
-                    <GroceryItem />
-                    <GroceryItem />
-                    <GroceryItem />
+                    {itemsToRender.map(item => 
+                        <GroceryItem item={item} key={item.id} body={body} handleDelete={handleItemDelete}/>)
+                    }
                 </tbody>
             </table>
         </div>

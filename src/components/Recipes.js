@@ -4,13 +4,14 @@ import EachRecipe from './EachRecipe';
 
 function Recipes ({returnHome}) {
 
-    function deleteItem () {
-        console.log("removed recipe")
-    }
-
     return (
         <div className = "recipes">
-            <SectionCard title = "Return Home" changeSection = {returnHome} />
+            <div className="col-sm-12 border">
+                <SectionCard title = "Cook It - Recipes"/>
+            </div>
+            <div className="col-sm-12 border">
+                <SectionCard title = "Return Home" changeSection = {returnHome} />
+            </div>
             <br />
             <table className="table">
                 <thead>
