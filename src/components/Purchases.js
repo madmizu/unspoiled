@@ -22,10 +22,10 @@ function Purchases ({returnHome, createNewPurchase, createNewItem, newPurchaseIn
 
     return (
         <>      
-            <div className="col-sm-12 border">
+            <div className="col-sm-12">
                 <SectionCard title = "Bought It - Add New Purchases"/>
             </div>
-            <div className="col-sm-12 border">
+            <div className="col-sm-12">
                 <SectionCard title = "Return Home" changeSection = {returnHome} />
             </div>
             <br />

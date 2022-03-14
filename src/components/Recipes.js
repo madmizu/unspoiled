@@ -6,10 +6,10 @@ function Recipes ({returnHome}) {
 
     return (
         <div className = "recipes">
-            <div className="col-sm-12 border">
+            <div className="col-sm-12">
                 <SectionCard title = "Cook It - Recipes"/>
             </div>
-            <div className="col-sm-12 border">
+            <div className="col-sm-12">
                 <SectionCard title = "Return Home" changeSection = {returnHome} />
             </div>
             <br />

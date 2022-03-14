@@ -6,10 +6,10 @@ function Inventory ({returnHome, itemsToRender, body, handleItemDelete}) {
     console.log(itemsToRender)
     return (
         <div className = "inventory">
-            <div className="col-sm-12 border">
+            <div className="col-sm-12">
                 <SectionCard title = {body === "inventory" ? "Have It - Inventory" : "Need It - Shopping List"}/>
             </div>
-            <div className="col-sm-12 border">
+            <div className="col-sm-12">
                 <SectionCard title = "Return Home" changeSection = {returnHome} />
             </div>
                 <br />

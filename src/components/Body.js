@@ -9,7 +9,7 @@ const [body, setBody] = useState("home");
 
 
     return (
-        <div className = "container-fluid border">
+        <div className = "container-fluid">
             <br/>
             <br/>
             <div className="row">
@@ -27,10 +27,15 @@ const [body, setBody] = useState("home");
                     </div>
                     <div className="col-sm-3 border">
                     <SectionCard title = "Cook It" changeSection = {()=>setBody("recipes")}/>
+                    
                     </div>
                     <br/>
                     <br/>
-                    
+                    <div className = "foodLoop">
+                    <br/>
+                    <br/>
+                        {/* <img className = "homeImage" src = "https://i.ibb.co/gdFP2jy/foodloop.gif" alt = {"foodLoop"} /> */}
+                    </div>
                 </> : <></> }
             {body === "purchases" ?
                 <Purchases returnHome = {()=>setBody("home")} body={body} setBody={setBody} createNewPurchase={createNewPurchase}
